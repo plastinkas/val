@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(195, 197, 199);
+}
+
+.moving-button {
+    position: absolute;
+    top: 66%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+}
+h1{
+    margin-top: -60px;
+    text-align: center;
+    font-size: 20px;
+}
+.vil{
+    position: absolute;
+    
+}
+
+.resizing-button{
+   
+        position: absolute;
+        top: 66%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: rgb(205, 41, 41);
+    
+}
+.moving-button,
+.resizing-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+@media (max-width: 600px) {
+    /* Стилі для екранів шириною до 600px */
+    .moving-button,
+    .resizing-button {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 16px;
+        margin-top: -30px;
+    }
+    
+    .moving-button,
+    .resizing-button {
+        top: 80%;
+    }
+}
+@media (max-width: 600px) {
+    
+    h1 {
+        margin-top: 120px;
+    }
+}
